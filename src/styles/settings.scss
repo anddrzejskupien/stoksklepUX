@@ -1,0 +1,18 @@
+/**
+ * src/styles/settings.scss
+ *
+ * Configures SASS variables and Vuetify overwrites
+ */
+
+// https://vuetifyjs.com/features/sass-variables/`
+
+@use 'vuetify/settings' with (
+  $body-font-family: ('Inter', sans-serif),
+  $field-control-height: 52px,
+  $field-input-padding-top: 0px,
+  $field-input-padding-bottom:0px,
+  $button-border-radius: 8px,
+  $field-error-color: #fb2c36,
+  $list-item-border-radius: 8px,
+  $field-input-min-height: 44px,
+);

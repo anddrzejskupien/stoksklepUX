@@ -1,0 +1,96 @@
+@use 'variables.scss' as *;
+.v-field {
+  border-bottom-left-radius: $border-radius !important;
+  border-bottom-right-radius: $border-radius !important;
+  border-top-left-radius: $border-radius !important;
+  border-top-right-radius: $border-radius !important;
+  --v-field-input-padding-top: 2px;
+  --v-field-input-padding-bottom:2px;
+  background-color: rgb(var(--v-theme-surface));
+}
+.v-main {
+    background-color: $primary-bg !important;
+}
+.v-btn--disabled {
+  opacity: .3 !important;
+}
+.v-btn.bg-grey {
+  background: #ebe6e7 !important;
+  color: #000 !important;
+}
+
+.v-main {
+  display: flex;
+  flex-direction: column;
+    min-height: 100% !important;
+}
+.v-application__wrap {
+  height: 100%;
+}
+
+.v-input.v-input--focused {
+    .v-field__outline {
+      color: #1a56db !important;
+    }
+}
+.v-expansion-panels {
+  .v-input .v-field__overlay {
+    background-color: #fbf9fa !important;
+  }
+
+  .v-selection-control-group {
+    padding-inline: 0 !important;
+    row-gap: 12px;
+    .v-label--clickable {
+      width: 100%;
+    }
+  }
+  .v-selection-control.v-radio {
+    border-radius: $border-radius !important;
+  }
+}
+
+.v-selection-control-group,
+.v-btn-group {
+  .v-btn {
+    border-radius: $border-radius !important;
+  }
+  .v-selection-control.v-radio:has(input:checked),
+  .v-btn.v-btn--active {
+    border-color: $primary-blue !important;
+    color: $primary-blue;
+    background-color: $blue-bg;
+  }
+}
+
+
+.v-expansion-panel {
+  border-radius: $border-radius-accordion !important;
+  .v-list-item__prepend {
+    width: 30px !important;
+  }
+}
+
+// green outlined button
+.v-btn.v-btn--variant-outlined.text-green {
+  color: $green-dark !important;
+  border-color: $green-dark !important;
+}
+
+.v-stepper.v-sheet {
+  box-shadow: none;
+}
+
+.border-error-input {
+ border-color: $error !important;
+}
+
+.v-btn {
+  text-transform: none !important;
+}
+.text-transform-none {
+    text-transform: none !important;
+}
+[class*="Toastify__toast-container--bottom"] {
+  bottom: 65px !important;
+}
